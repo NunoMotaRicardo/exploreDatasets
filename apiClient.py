@@ -5,10 +5,12 @@ from dotenv import load_dotenv
 import os
 
 
-class apiClient:
+class ApiClient:
     def __init__(self):
         load_dotenv()
         self.serverUrl = os.getenv("APISERVERURL")
+        if not self.serverUrl:
+            raise ValueError("APISERVERURL environment variable is not set. Please set it in your .env file or environment.")
         self.headers = {
             'Accept': 'application/json'
         }
