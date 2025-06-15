@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.pyo
+*.pyd
+*.pdb
+*.log
+*.pot
+*.mo
+*.env
+.venv
+venv/
+env/
+ENV/
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# VS Code
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Custom
+master.venv
