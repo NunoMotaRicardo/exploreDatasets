@@ -6,3 +6,4 @@ numpy
 backtrader
 scipy
 qfin
+yahooquery

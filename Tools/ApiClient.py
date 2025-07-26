@@ -4,6 +4,8 @@ import json
 from dotenv import load_dotenv
 import os
 
+__version__ = "1.0.0"
+#print(f"importing {__name__} version {__version__}")
 
 class ApiClient:
     def __init__(self):
@@ -17,7 +19,7 @@ class ApiClient:
 
     def get(self, method: str = "", params: dict = {}):
         try:
-            response = requests.get(self.serverUrl + "/" + method, params=params, headers=self.headers, timeout=10)
+            response = requests.get(f"{self.serverUrl}/{method}", params=params, headers=self.headers, timeout=10)
             response.raise_for_status()
             data = response.json()
             if 'code' in data and 'result' in data:
