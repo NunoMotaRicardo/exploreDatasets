@@ -7,3 +7,7 @@ backtrader
 scipy
 qfin
 yahooquery
+matplotlib
+plotly
+anywidget
+#local mytools
