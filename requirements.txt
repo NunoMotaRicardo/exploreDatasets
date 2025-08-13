@@ -10,4 +10,5 @@ yahooquery
 matplotlib
 plotly
 anywidget
+scikit-learn
 #local mytools
